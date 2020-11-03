@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #29303b;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.udemy-btnWhite {
+  background-color: #fff;
+  border: 1px solid #29303b;
+  border-radius: 2px;
+  padding: 11px 12px;
+  color: #686f7a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.udemy-btnRed {
+  background-color: #ec5252;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 11px 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.udemy-btnRed:hover {
+  background-color: #521822;
+  border-color: 2px;
+  color: #fff;
+}
+
+header {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+header .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header__left .navbar-brand img {
+  width: 110px;
+}
+
+header .header__left .header__form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header .header__right .udemyBtnGroup {
+  white-space: nowrap;
+}
+
+header .header__right .nav-link {
+  color: #505763;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header__right .bussiness,
+  header .header__right .teach {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header__left .header__categories,
+  header .header__left .header__form {
+    display: none;
+  }
+  header .header__right .udemyBtnGroup {
+    display: none;
+  }
+}
+
+.udemyCarousel .udemyCarousel__container {
+  background-image: url(../image/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}

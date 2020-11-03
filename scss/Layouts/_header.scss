@@ -1,0 +1,57 @@
+header {
+
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+
+    .header__left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .navbar-brand {
+            img {
+                width: 110px;
+            }
+        }
+
+        .header__form {
+            flex-grow: 1;
+        }
+    }
+
+    .header__right {
+
+        .udemyBtnGroup {
+            white-space: nowrap;
+        }
+
+        .nav-link {
+            @include styleText($color-black-light, $fs-1, $fw-normal);
+        }
+    }
+
+    @include responsive("extra-large") {
+        .header__right {
+
+            .bussiness,
+            .teach {
+                display: none;
+            }
+        }
+    }
+
+    @include responsive("medium") {
+        .header__left {
+
+            .header__categories,
+            .header__form {
+                display: none;
+            }
+        }
+
+        .header__right {
+            .udemyBtnGroup {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+// xóa code mặc định của trình duyệt
+html,
+body {
+    margin: 0;
+    padding: 0;
+    @include styleText($color-black-0,
+        $fs-0,
+        $fw-normal);
+}
+
+* {
+    box-sizing: border-box;
+}
