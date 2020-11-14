@@ -1,0 +1,181 @@
+.udemyService {
+    background: rgb(242, 243, 245);
+    .udemyService__container {
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-width: 320px;
+        .udemyService__box {
+            position: relative;
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                li {
+                    margin-right: 15px;
+                    color: #dedfe0;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    button {
+                        display: none;
+                    }
+                    &:hover {
+                        color: #686f7a;
+                    }
+                }
+                .slick-active {
+                    color: #686f7a;
+                }
+            }
+            .slick-track {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .slick-slide {
+                    height: auto;
+                    background: rgb(255, 255, 255);
+                    border: 1px solid rgb(232, 233, 235);
+                    border-radius: 2px;
+                    height: 100%;
+                    margin-right: 16px;
+                    padding: 16px;
+                    .udemyService__img {
+                        height: 42px;
+                        width: 42px;
+                        margin: 0px auto 4px;
+                    }
+                    .udemyService__content {
+                        h4 {
+                            margin-bottom: 4px;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 1.47;
+                        }
+                        p {
+                            color: #686f7a;
+                            font-size: 15px;
+                            line-height: 1.5em;
+                            margin-bottom: 0;
+                            margin: 0 0 10.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .udemyService {
+        .udemyService__container {
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        .udemyService__img {
+                            width: 25px;
+                            height: 25px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .udemyService__content {
+                            h4 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .udemyService {
+        .udemyService__container {
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        max-height: 135px;
+                        min-height: 135px;
+                        text-align: center;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .udemyService {
+        .udemyService__container {
+            width: 650px;
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        max-height: 186px;
+                        min-height: 186px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .udemyService {
+        .udemyService__container {
+            width: 750px;
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        max-height: 186px;
+                        min-height: 186px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .udemyService {
+        .udemyService__container {
+            width: 970px;
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 24px;
+                        text-align: left;
+                        max-height: 156px;
+                        min-height: 156px;
+                        .udemyService__img {
+                            margin: 0 16px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .udemyService {
+        .udemyService__container {
+            width: 1170px;
+            .udemyService__box {
+                .slick-track {
+                    .slick-slide {
+                        min-height: 156px;
+                    }
+                }
+            }
+        }
+    }
+}

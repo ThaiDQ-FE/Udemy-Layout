@@ -1,28 +1,17 @@
 .udemy-btnWhite {
-    @include styleButton($color-white-0,
-        $color-black-0,
-        $border-radius,
-        $pd-1 + 1,
-        $pd-1 + 2);
-    @include styleText($color-gray-4,
-        $fs-0,
-        $fw-bold-1);
+    @include styleButton($color-white-0, $color-black-0, $border-radius, $pd-1 + 1, $pd-1 + 2);
+    @include styleText($color-gray-4, $fs-0, $fw-bold-1);
+    &:hover {
+        @include styleButtonHover($color-white-0, $color-black-0, $color-black-0);
+    }
 }
 
 .udemy-btnRed {
-    @include styleButton($color-red-0,
-        $color-trans,
-        $border-radius,
-        $pd-1 + 1,
-        $pd-1 + 2);
+    @include styleButton($color-red-0, $color-trans, $border-radius, $pd-1 + 1, $pd-1 + 2);
 
     &:hover {
-        @include styleButtonHover($color-red-1,
-            $border-radius,
-            $color-white-0);
+        @include styleButtonHover($color-red-2, $border-radius, $color-white-0);
     }
 
-    @include styleText($color-white-0,
-        $fs-0,
-        $fw-bold-1);
+    @include styleText($color-white-0, $fs-0, $fw-bold-1);
 }

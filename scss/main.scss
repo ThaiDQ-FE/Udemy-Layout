@@ -1,19 +1,28 @@
 // Helper
-@import './Helper/variables';
-@import './Helper/mixin';
+@import "./Helper/variables";
+@import "./Helper/mixin";
 
 // Vendor
 
 // Base
-@import './Base/reset';
+@import "./Base/reset";
 
 // Components
-@import './Components/button';
+@import "./Components/button";
 
 // Layouts
 
-@import './Layouts/header';
-@import './Layouts/carousel';
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/intro";
+@import "./Layouts/course";
+@import "./Layouts/service";
+@import "./Layouts/student";
+@import "./Layouts/banner";
+@import "./Layouts/categories";
+@import "./Layouts/feedback";
+@import "./Layouts/company";
+@import "./Layouts/footer";
 
 // Pages
 

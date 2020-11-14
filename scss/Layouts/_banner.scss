@@ -1,0 +1,134 @@
+.udemyBanner {
+    .udemyBanner__container {
+        margin-bottom: 32px;
+        .udemyBanner__color {
+            background: linear-gradient(-45deg, #ec5252 0%, #6e1a52 100%);
+            height: 8px;
+        }
+        .udemyBanner__content {
+            display: flex;
+            align-items: center;
+            background-color: #29303b;
+            color: #f7f8fa;
+            height: 360px;
+            text-align: center;
+            .udemyBanner__icon {
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 100%;
+                .betwwen-xs {
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: center;
+                }
+                .udemyBanner__top,
+                .udemyBanner__bottom {
+                    visibility: hidden;
+                    .col-xs {
+                        flex-grow: 1;
+                        flex-basis: 0;
+                        max-width: 100%;
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .udemyBanner__middle {
+                    visibility: hidden;
+                    .col-xs-2 {
+                        flex-basis: 16.6667%;
+                        max-width: 16.6667%;
+                        display: flex;
+                        align-items: center;
+                        i {
+                            font-size: 32px;
+                        }
+                    }
+                    .col-md-6 {
+                        flex-basis: 50%;
+                        max-width: 50%;
+                        visibility: visible;
+                        .udemyBanner__title {
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 1.33em;
+                            margin-bottom: 16px;
+                        }
+                        .udemyBanner__sub {
+                            margin-bottom: 24px;
+                        }
+                        .btn-primary {
+                            color: #fff;
+                            background-color: #ec5252;
+                            border: 1px solid transparent;
+                            &:hover {
+                                color: #fff;
+                                background-color: #992337;
+                                border-color: transparent;
+                            }
+                        }
+                        .btn {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            font-weight: 700;
+                            text-align: center;
+                            vertical-align: middle;
+                            touch-action: manipulation;
+                            cursor: pointer;
+                            background-image: none;
+                            border: 1px solid transparent;
+                            white-space: nowrap;
+                            padding: 11px 12px;
+                            font-size: 15px;
+                            line-height: 1.35135;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 414px) {
+    .udemyBanner {
+        .udemyBanner__middle {
+            .col-xs-2 {
+                display: none !important;
+            }
+            .col-md-6 {
+                max-width: 100% !important;
+                flex-basis: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .udemyBanner {
+        .udemyBanner__container {
+            .udemyBanner__content {
+                .udemyBanner__icon {
+                    .udemyBanner__top,
+                    .udemyBanner__bottom {
+                        margin-bottom: 32px;
+                        margin-top: 48px;
+                        visibility: visible;
+                    }
+                    .udemyBanner__middle {
+                        visibility: visible;
+                        align-self: center;
+                        text-align: center;
+                        .col-xs-2 {
+                            .left {
+                                padding-left: 60%;
+                            }
+                            .right {
+                                padding-left: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

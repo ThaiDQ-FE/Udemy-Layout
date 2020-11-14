@@ -1,0 +1,113 @@
+.udemyCategories {
+    .udemyCategories__container {
+        margin-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+        .udemyCategories__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.33em;
+            margin-bottom: 20px;
+        }
+        .udemyCategories__items {
+            .udemyCategories__box {
+                margin-bottom: 21px;
+                background-color: #fff;
+                border: 1px solid transparent;
+                border-radius: 2px;
+                position: relative;
+                border: none;
+                box-shadow: none;
+                cursor: pointer;
+                &::before {
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+                    opacity: 1;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s ease;
+                    pointer-events: none;
+                }
+                &::after {
+                    opacity: 0;
+                    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s ease;
+                    pointer-events: none;
+                }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+                .udemyCategories__body {
+                    padding: 15px;
+                    .udemyCategories__content {
+                        display: flex;
+                        flex-direction: row;
+                        i {
+                            padding-right: 16px;
+                            font-size: 32px;
+                        }
+                        .udemyCategories__text {
+                            height: 32px;
+                            line-height: 32px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            flex: 1;
+                            min-width: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .udemyCategories {
+        .udemyCategories__container {
+            .udemyCategories__items {
+                .udemyCategories__box {
+                    margin: 8px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .udemyCategories {
+        .udemyCategories__container {
+            max-width: 750px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .udemyCategories {
+        .udemyCategories__container {
+            max-width: 970px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .udemyCategories {
+        .udemyCategories__container {
+            max-width: 1170px;
+        }
+    }
+}

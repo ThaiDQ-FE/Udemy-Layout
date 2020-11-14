@@ -1,9 +1,153 @@
 .udemyCarousel {
+    background-image: url(../image/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
     .udemyCarousel__container {
-        background-image: url(../image/cover.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 500px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .udemyCarousel__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.33;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .udemyCarousel__text {
+        font-size: 18px;
+        line-height: 1.61;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .udemyCarousel__form {
+        .input-group {
+            border: none;
+            .form-control {
+                height: 50px;
+                font-size: 20px;
+                padding: 11px 17px;
+                border-color: #fff;
+                border-right: none;
+                &::placeholder {
+                    opacity: 0.8;
+                }
+                &:focus {
+                    border-color: #fff;
+                    box-shadow: none;
+                }
+            }
+            .input-group-append {
+                .input-group-text {
+                    width: 50px;
+                    padding-left: 20px;
+                    background-color: #fff;
+                    border: none;
+                    &:hover {
+                        background-color: #ec5252;
+                        border: 1px solid #ec5252;
+                        .icon {
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .udemyCarousel__container {
+        width: 754px;
+        .udemyCarousel__content {
+            max-width: 350px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .udemyCarousel__container {
+        width: 974px;
+        .udemyCarousel__content {
+            max-width: 460px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .udemyCarousel__container {
+        width: 1174px;
+    }
+}
+
+@media (max-width: 575px) {
+    .udemyCarousel {
+        height: 300px;
+        .udemyCarousel__container {
+            .udemyCarousel__content {
+                .udemyCarousel__title {
+                    max-width: 60%;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 1.17;
+                    color: #fff;
+                    margin-bottom: 10px;
+                }
+                .udemyCarousel__text {
+                    max-width: 60%;
+                    font-size: 18px;
+                    line-height: 1.46;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                .udemyCarousel__form {
+                    .input-group {
+                        border: none;
+                        .form-control {
+                            height: 50px;
+                            font-size: 16px;
+                            padding: 11px 17px;
+                            border-color: #fff;
+                            &::placeholder {
+                                opacity: 0.8;
+                            }
+                            &:focus {
+                                border-color: #fff;
+                                box-shadow: none;
+                            }
+                        }
+                        .input-group-append {
+                            .input-group-text {
+                                width: 50px;
+                                padding-left: 20px;
+                                background-color: #fff;
+                                &:hover {
+                                    background-color: #ec5252;
+                                    border: 1px solid #ec5252;
+                                    .icon {
+                                        color: #fff !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .udemyCarousel__container {
+        width: 100%;
+        margin: 0 15px;
+        .udemyCarousel__content {
+            max-width: 350px;
+        }
     }
 }

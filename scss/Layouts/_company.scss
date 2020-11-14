@@ -1,0 +1,152 @@
+.udemyCompany {
+    background: rgb(242, 243, 245);
+    .udemyCompany__trademark {
+        padding-bottom: 24px;
+        .udemyCompany__text {
+            color: #686f7a;
+            font-size: 13px;
+            padding-top: 16px;
+            text-align: center;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            .udemyCompany__logos {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 32px;
+                width: 300px;
+                .udemyCompany__item {
+                    margin: 8px 16px;
+                    img {
+                        max-width: none;
+                        border: 0;
+                        vertical-align: middle;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .udemyCompany__content {
+        display: flex;
+        .udemyCompany__left,
+        .udemyCompany__right {
+            justify-content: center;
+            flex-grow: 1;
+            display: flex;
+            padding: 36px 0 22px;
+            .udemyCompany__box {
+                position: relative;
+                .udemyCompany__Text {
+                    .udemyCompany__Button {
+                        position: absolute;
+                        bottom: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            .udemyCompany__Text {
+                max-width: 400px;
+                text-align: center;
+                .udemyCompany__title {
+                    padding-top: 3px;
+                    a {
+                        font-size: 19px;
+                        font-weight: 700;
+                        line-height: 1.47em;
+                        color: #505763;
+                        text-decoration: none;
+                    }
+                }
+                .udemyCompany__text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    padding-top: 3px;
+                }
+                .udemyCompany__Button {
+                    a {
+                        margin-top: 1em;
+                        &:hover {
+                            color: #fff;
+                            background-color: #992337;
+                            border-color: transparent;
+                        }
+                    }
+                    .btn-primary {
+                        color: #fff;
+                        background-color: #ec5252;
+                        border: 1px solid transparent;
+                    }
+                    .btn {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        font-weight: 700;
+                        text-align: center;
+                        vertical-align: middle;
+                        touch-action: manipulation;
+                        cursor: pointer;
+                        background-image: none;
+                        border: 1px solid transparent;
+                        white-space: nowrap;
+                        padding: 11px 12px;
+                        font-size: 15px;
+                        line-height: 1.35135;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .udemyCompany {
+        .udemyCompany__trademark {
+            a {
+                .udemyCompany__logos {
+                    width: 100%;
+                    .udemyCompany__item {
+                        margin: 0 16px 8px;
+                    }
+                }
+            }
+        }
+        .udemyCompany__content {
+            flex-direction: row;
+            padding-bottom: 22px;
+            .udemyCompany__left {
+                flex-grow: 1;
+                justify-content: center;
+                padding: 28px 30px;
+                &:first-child {
+                    border-bottom: none;
+                    border-right: 1px solid #dedfe0;
+                    padding: 28px 30px;
+                }
+            }
+            .udemyCompany__right {
+                flex-grow: 1;
+                justify-content: center;
+                padding: 28px 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .udemyCompany {
+        .udemyCompany__trademark {
+            a {
+                .udemyCompany__logos {
+                    .udemyCompany__item {
+                        margin: 0 32px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
